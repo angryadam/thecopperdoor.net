@@ -29,6 +29,10 @@ body, input, select, textarea {
     line-height: 1.75em;
 }
 
+img.index-img {
+  width: 100%;
+}
+
 p, .sans-font, td, h4 {
   font-family: 'Josefin Sans', sans-serif;
 }
@@ -88,12 +92,16 @@ td {
 
 @media
 only screen and (max-width: 760px),
-(min-device-width: 768px) and (max-device-width: 1024px)  {
+(min-device-width: 768px) and (max-device-width: 1023px)  {
 
 	/* Force table to not be like tables anymore */
 	table, thead, tbody, th, td, tr {
 		display: block;
 	}
+
+  img.index-img {
+    width: inherit;
+  }
 
 	/* Hide table headers (but not display: none;, for accessibility) */
 	thead tr {
